@@ -36,3 +36,18 @@ let sum2=salaries.reduce((accumulator,salary)=>accumulator+salary,1000)
 //salary=78000 sum=96000+78000
 console.log(sum2);
 
+
+// map function
+employees=["Amol",'aruna','Komal','RamP','Arnavi',"Rajamp", 'Anup'];
+let mappedEmployees=employees.map(emp=>emp.toLowerCase());
+console.log(employees);
+console.log(mappedEmployees);
+
+salaries=[95000,67000,78000,98000,130000]
+//increment everysalary by 10000
+let newsalaries= salaries.map(sal=>sal+10000)
+console.log(salaries);
+console.log(newsalaries);
+
+//increment salary>78000 by 10000 
+salaries.filter(sal=>sal>78000).map(sal=>sal+10000).forEach(sal=>console.log(sal));
