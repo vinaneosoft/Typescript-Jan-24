@@ -1,0 +1,10 @@
+Declare array having employee names ["zxc"]. 
+
+1. Display array using normal for loop and for of loop ( Do not use forEach method)
+2. Store employees starting with A/a in new array and display that array (Do not use filter method)
+3. Find first employee whose name ends with P/p and display it ( Do not use find method)
+
+
+Declare  array having salaries [56000,45000,....]
+1. Make sum of salaries (Do not use reduce method)
+2. Find salaries greater than 78000 (Do not use filter method)
