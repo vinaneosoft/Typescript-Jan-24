@@ -21,4 +21,4 @@ for(let employee of employees){
         break;
     }
 }
-console.log("Employees starting with A/a ",endsWithP);
+console.log("Employees ending with P/p ",endsWithP);
