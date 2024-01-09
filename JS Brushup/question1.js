@@ -9,11 +9,6 @@ for(let employee of employees){
 }
 console.log("Employees starting with A/a ",startsWithA);
 
-
-
-
-
-
 let endsWithP="";
 for(let employee of employees){
     if(employee.toLowerCase().endsWith('p')){
