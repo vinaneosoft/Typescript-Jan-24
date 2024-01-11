@@ -1,0 +1,6 @@
+Create any Entity class Person with instance variables, p-constructor and instance methods
+
+Create multiple objects from that class
+
+make state change
+call methods
