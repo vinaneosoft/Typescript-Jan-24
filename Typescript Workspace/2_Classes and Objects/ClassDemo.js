@@ -6,7 +6,7 @@ var BankAccount = /** @class */ (function () {
         return this.accountBalance;
     };
     return BankAccount;
-}());
+}()); //class body ended
 var account1;
 account1 = new BankAccount(); // object gets created in memory : it is sent for initialization : constructor
 // typescript bydefault provides 1 default constr (0- paratemer)
@@ -22,9 +22,15 @@ account1.customerId = 88;
 account1.accountType = "Savings";
 account1.accountBalance = 0;
 console.log(account1);
+account1.deposit(45000);
+console.log(account1);
 var account2 = new BankAccount();
 console.log("account2:");
 console.log(account2.accountNumber);
 console.log(account2.customerId);
 console.log(account2.accountBalance);
 console.log(account2.accountType);
+// state change and display the object
+account2.accountBalance = 1000;
+account2.deposit(12000);
+console.log(account2);

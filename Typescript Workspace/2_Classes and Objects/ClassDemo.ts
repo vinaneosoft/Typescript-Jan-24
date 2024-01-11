@@ -1,5 +1,4 @@
 
-
 class BankAccount{
     accountNumber:number;
     customerId:number;
@@ -11,7 +10,7 @@ class BankAccount{
         return this.accountBalance;
     }
     // withdraw method
-}
+}//class body ended
 
 let account1:BankAccount;
 account1=new BankAccount();  // object gets created in memory : it is sent for initialization : constructor
@@ -31,6 +30,10 @@ account1.accountBalance=0;
 
 console.log(account1); 
 
+account1.deposit(45000);
+console.log(account1);
+
+
 
 let account2=new BankAccount();
 console.log("account2:");
@@ -39,3 +42,13 @@ console.log(account2.accountNumber);
 console.log(account2.customerId);
 console.log(account2.accountBalance);
 console.log(account2.accountType);
+
+
+
+// state change and display the object
+
+account2.accountBalance=1000;
+account2.accountType="Savings";
+account2.deposit(12000);
+console.log(account2);
+
