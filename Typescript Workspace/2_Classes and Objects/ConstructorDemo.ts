@@ -21,7 +21,6 @@ class BankAccount{
 let account1=new BankAccount(); // constructors called implicitly
 account1.accountNumber=8989898989;
 console.log(account1);
-account1.accountNumber=8989898989;
 let account2=new BankAccount();
 account2.accountNumber=9090909090;
 console.log(account2);
