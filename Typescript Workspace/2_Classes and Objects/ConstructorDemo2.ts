@@ -26,3 +26,19 @@ let account2=new BankAccount(9090909090,999,"Savings",5000);
 console.log(account1);
 console.log(account2);
 
+console.log(account1.accountNumber);
+console.log(account1.accountBalance);
+console.log(account1.accountType);
+console.log(account1.customerId);
+
+
+// for in loop
+console.log("-----for in loop-----");
+
+for(let key in account1){
+    console.log(key);
+    console.log(account1[key]);
+    
+}
+
+
