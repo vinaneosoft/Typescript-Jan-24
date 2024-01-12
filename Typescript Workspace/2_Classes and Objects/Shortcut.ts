@@ -1,13 +1,5 @@
 class BankAccount{
-    accountNumber:number;
-    customerId:number;
-    accountType:string;
-    accountBalance:number;
-    constructor(accNum=11111111, customerId=111, type='savings', accountBalance=0){
-        this.accountBalance=accountBalance;
-        this.accountNumber=accNum;
-        this.accountType=type;
-        this.customerId=customerId;
+    constructor(public accountNumber=11111111, public customerId=111, public accountType='savings', public accountBalance=0){
     }
     deposit(amount:number):number{
         this.accountBalance=this.accountBalance+amount; 
