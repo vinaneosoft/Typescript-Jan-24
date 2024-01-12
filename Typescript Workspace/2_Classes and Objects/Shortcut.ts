@@ -15,3 +15,4 @@ let accounts=[account1,account2,account3,account4,account5];
 for(let account of accounts){
     console.log(account);
 }
+console.log(account2.accountNumber); // accessible here
