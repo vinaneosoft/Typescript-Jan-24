@@ -1,0 +1,1 @@
+Implement any example for inheritance. Also show super(x,y,z) call with implementation.
