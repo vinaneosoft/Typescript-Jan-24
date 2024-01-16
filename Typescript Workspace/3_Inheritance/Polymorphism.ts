@@ -36,11 +36,8 @@ animal.eat();
 animal=<Animal>new Deer();
 animal.eat();
 
-
 let tiger=new Tiger();
 let deer=new Deer();
-
-
 
 TEST(tiger)
 TEST(deer);

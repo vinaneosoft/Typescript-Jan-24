@@ -1,0 +1,1 @@
+Implement any example of overriding in previous inheritance example
