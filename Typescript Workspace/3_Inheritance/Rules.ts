@@ -4,12 +4,9 @@ class Employee{
         public basicSalary=0) {
         console.log("in Employee Constructor....");
     }
-   getGrossSalary():number{
+    getGrossSalary():ABC{
         console.log("............in Employee method");
-       return this.basicSalary+
-       (0.05*this.basicSalary)+
-       (0.03*this.basicSalary)+
-       (0.1*this.basicSalary)
+        return new ABC(); // returning object
    }
 }
 class Trainer extends Employee{
@@ -22,13 +19,12 @@ class Trainer extends Employee{
        this.trainingTopics.push(topic);
        return this.trainingTopics.length;
    }
-   getPayPerMonth(extraHrs:number){
+    getPayPerMonth(extraHrs:number){
         return extraHrs*this.extraPay;
    }
-   getGrossSalary():number{
+    getGrossSalary():PQR{
     console.log(".................in Trainer method");
-    return super.getGrossSalary()+
-    this.getPayPerMonth(60)
+     return new PQR()
    }
 }
 let employee=new Employee(111, "Poonam Pawar",90000);
@@ -48,4 +44,21 @@ let trainer3=new Trainer();
 
 
 
+// Rules of overrding a method from superclass to subclass
+/* 1. scope : same or increased 
+   2. name : must be same
+   3. parameters : number of p and data types must be same
+   4. return type :
+    i. if return type  is primitive then it must be same
+    ii. if return type is void  then any return type in subclass allowed
+    iii. if superclass method is returing object then in subclass covariants are allowed
 
+*/ 
+
+class ABC{
+
+}
+
+class PQR extends ABC{
+    
+}
