@@ -1,0 +1,5 @@
+Create Student class with instance variables rollNumber, studentName, and Standard
+Roll Number to student must be autoAssigned using autoincrement logic
+ for Example NHP1, NHP2, NHP3, NHP4...... and so on
+
+Hint: use Static variable for logic
