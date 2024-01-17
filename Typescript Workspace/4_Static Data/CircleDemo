@@ -1,5 +1,5 @@
 class Circle{
-    static readonly pie=3.142;
+    static readonly pie=3.142; // readonly static pie=3.142 : wrong sequence
     constructor(public readonly radius=0){
     }
     static{
@@ -7,6 +7,7 @@ class Circle{
     }
     getArea(){
         return Circle.pie*this.radius*this.radius
+       
     }
 }
 let circle1=new Circle(10)
