@@ -1,0 +1,12 @@
+Declare Queue interface having insert and remove methods
+Declare Deque interface having insertFront and removeLast methods it must extend Queue interface
+
+Define a class implementing Deque. Override the methods and implement the methods with real logic
+
+In the end u must able to insert, remove, insertFront and removeLast element from one array using above implementation.
+
+let deque= new Deque(67,45,89,33,123,45);
+deque.insert : must insert element at last
+deque.remove : must remove element from first
+deque.insertFront : must insert element at first
+deque.removeLast : must remove element from last
