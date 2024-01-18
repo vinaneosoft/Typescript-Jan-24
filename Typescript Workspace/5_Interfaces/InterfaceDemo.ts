@@ -6,8 +6,6 @@ interface EmployeeIntf{
     departmentId?:string;  // optional
     getNetSalary?():number; // optional
 }
-
-
 class SquadEmployee implements EmployeeIntf{
     employeeId:number;
     employeeName:string;
@@ -25,8 +23,6 @@ class SquadEmployee implements EmployeeIntf{
         return this.getGrossSalary()-500;
     }
 }
-
-
 class CoderEmployee implements EmployeeIntf{
     employeeId:number;
     employeeName:string;
