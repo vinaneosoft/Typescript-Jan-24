@@ -21,5 +21,3 @@ console.log(ss);
 console.log(typeof ss);
 
 console.log(s2.valueOf()===s3.valueOf());
-
-
