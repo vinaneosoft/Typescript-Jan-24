@@ -1,0 +1,3 @@
+Sort Accounts on the basis of account type.
+
+Hint : sort(logic here)
