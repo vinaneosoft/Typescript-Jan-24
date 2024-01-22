@@ -46,3 +46,18 @@ cities.push("Thane");
 cities.push(new String("Solapur"));
 console.log(cities);
 console.log(typeof cities);
+
+let itr=cities.entries();   // iterable object
+/* console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next()); */
+let entry;
+do{
+    entry=itr.next();
+    if(entry.done===false)
+        console.log(entry.value);
+    
+}while(entry.done===false);

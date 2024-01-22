@@ -1,6 +1,6 @@
-var salaryArray;
+let salaryArray;
 salaryArray = new Array(); // primitives as well as wrappers allowed
-var salaries = new Array();
+let salaries = new Array();
 console.log(salaries.length);
 console.log(salaries);
 salaries[0] = 45000; // indexed collection
@@ -17,9 +17,9 @@ salaries[0] = 34000;
 console.log(salaries);
 salaries.sort();
 console.log(salaries);
-salaries.sort(function (num1, num2) { return num1 - num2; });
+salaries.sort((a, b) => a - b);
 console.log(salaries);
-var empNames = ["Zahida", "Kripa", "krishna", "Mayur", 'Padma'];
+let empNames = ["Zahida", "Kripa", "krishna", "Mayur", 'Padma'];
 empNames.push("Rita"); //push(...items: string[]): number
 empNames.pop(); //.pop(): string | undefined
 console.log(empNames);
@@ -35,9 +35,22 @@ pop():T | undefined{
 
 
 */
-var cities = new Array();
+let cities = new Array();
 cities.push("Thane");
 cities.push("Thane");
 cities.push(new String("Solapur"));
 console.log(cities);
 console.log(typeof cities);
+let itr = cities.entries(); // iterable object
+/* console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next()); */
+let entry;
+do {
+    entry = itr.next();
+    if (entry.done === false)
+        console.log(entry.value);
+} while (entry.done === false);
