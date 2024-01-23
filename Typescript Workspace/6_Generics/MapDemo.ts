@@ -1,18 +1,15 @@
 
 // employeeId-key, contact Number-value
 
-let contactInfo=new Map<number,number>();
+let contactInfo=new Map<number,number>(); // inbuilt generic
 contactInfo.set(1212,7878787878)
 contactInfo.set(1112,9097909790)
 contactInfo.set(1212,8584858485)
 contactInfo.set(2323,8786878687)
 contactInfo.set(4545,8989898989)
 contactInfo.set(8888,8786878687)
-
 console.log(contactInfo);
-
 console.log(contactInfo.get(8888));
-
 let itr=contactInfo.entries();
 let entry;
 do{
@@ -28,5 +25,4 @@ do{
     if(key.done===false)
         console.log(key.value);
 }while(key.done===false);
-
 contactInfo.values(); // implement it
